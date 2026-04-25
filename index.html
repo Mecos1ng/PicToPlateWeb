@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicToPlateAI - Yapay Zeka Destekli Kalori Takipçisi</title>
+    <meta name="description" content="Yemeklerinizin fotoğrafını çekin, PicToPlateAI kalorileri hesaplasın ve tarifleri çıkarsın. AI diyetisyeniniz her an yanınızda!">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">PicToPlateAI</div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-content animate-fade-in">
+                    <h1 class="hero-title">Sadece Fotoğraf Çek, <span>Sağlığını Yönet.</span></h1>
+                    <p class="hero-description">
+                        Yemeğinin fotoğrafını çek, PicToPlateAI saniyeler içinde kaloriyi hesaplasın, 
+                        tarifi çıkarsın ve AI diyetisyenimizle sana özel tavsiyeler versin.
+                    </p>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary">
+                            <!-- Custom Android SVG -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.523 15.3414C17.0628 15.3414 16.6901 14.9687 16.6901 14.5085C16.6901 14.0483 17.0628 13.6756 17.523 13.6756C17.9832 13.6756 18.3559 14.0483 18.3559 14.5085C18.3559 14.9687 17.9832 15.3414 17.523 15.3414ZM6.477 15.3414C6.0168 15.3414 5.6441 14.9687 5.6441 14.5085C5.6441 14.0483 6.0168 13.6756 6.477 13.6756C6.9372 13.6756 7.3099 14.0483 7.3099 14.5085C7.3099 14.9687 6.9372 15.3414 6.477 15.3414ZM17.922 10.6091L19.7824 7.3868C19.866 7.242 19.8163 7.0573 19.6715 6.9737C19.5267 6.8901 19.342 6.9398 19.2584 7.0846L17.3732 10.3503C15.8236 9.6429 14.0152 9.2443 12 9.2443C9.9848 9.2443 8.1764 9.6429 6.6268 10.3503L4.7416 7.0846C4.658 6.9398 4.4733 6.8901 4.3285 6.9737C4.1837 7.0573 4.134 7.242 4.2176 7.3868L6.078 10.6091C2.6074 12.4939 0.2842 16.0312 0 20.1557H24C23.7158 16.0312 21.3926 12.4939 17.922 10.6091Z"/>
+                            </svg>
+                            Android için İndir
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <i data-lucide="apple"></i> iOS için İndir
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image animate-fade-in">
+                    <img src="assets/hero_purple.png" alt="PicToPlateAI App Mockup">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Akıllı Özellikler</h2>
+            <div class="feature-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card glass animate-fade-in">
+                    <div class="feature-icon">
+                        <img src="assets/calorie_scan_purple.png" alt="Kalori Hesaplama">
+                    </div>
+                    <h3>Görsel Kalori Takibi</h3>
+                    <p>Karmaşık veri girişlerine son! Sadece fotoğraf çekin, yapay zeka porsiyonu ve kaloriyi sizin için analiz etsin.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card glass animate-fade-in" style="animation-delay: 0.2s;">
+                    <div class="feature-icon">
+                        <img src="assets/recipe_gen_purple.png" alt="Tarif Çıkarma">
+                    </div>
+                    <h3>Anında Tarif Analizi</h3>
+                    <p>Restoranda yediğiniz o harika yemeğin tarifini mi merak ediyorsunuz? PicToPlateAI içindeki malzemeleri ve yapılışını şak diye çıkarır.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card glass animate-fade-in" style="animation-delay: 0.4s;">
+                    <div class="feature-icon">
+                        <img src="assets/ai_dietitian_purple.png" alt="AI Diyetisyen">
+                    </div>
+                    <h3>7/24 AI Diyetisyen</h3>
+                    <p>Size özel beslenme planları, motivasyon dolu tavsiyeler ve her sorunuza yanıt veren yapay zeka diyetisyeniniz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo" style="margin-bottom: 1rem;">PicToPlateAI</div>
+            <p>&copy; 2026 PicToPlateAI. Tüm hakları saklıdır.</p>
+            <div class="btn-group" style="justify-content: center; margin-top: 2rem;">
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Gizlilik Politikası</a>
+                <a href="#" style="color: var(--text-muted); text-decoration: none;">Kullanım Koşulları</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-fade-in').forEach(el => {
+            el.style.opacity = "0";
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
